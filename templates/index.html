@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フリーな掲示板</title>
+    <style>
+		p {
+            border: 1px solid silver;
+            padding: 1em;
+        }
+		span {
+            background-color: #eef;
+        }
+	</style>
+</head>
+<body>
+    <h1>掲示板</h1>
+    <div>
+        <form action="/create" method="post">
+            名前： <input type="text" name="name"><br>
+            本文： <textarea name="body" id="" cols="30" rows="10"></textarea>
+            <button type="submit">書き込み</button>
+        </form>
+    </div>
+    {{.}}
+</body>
+</html>
